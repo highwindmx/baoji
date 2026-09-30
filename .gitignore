@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# 私有数据（宝宝记录数据库 / 备份 / 删除清单），绝不入库
+data/
+
+# 媒体文件（宝宝照片视频），绝不入库
+static/uploads/
+
+# 环境变量（含访问口令）
+.env
+
+# WorkBuddy 工作区数据
+.workbuddy/
+
+# 系统/编辑器
+Thumbs.db
+.DS_Store
+*.swp

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>宝记 · 宝宝成长记录</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <!-- 登录 -->
+  <div id="login">
+    <div class="box">
+      <h1>⚫ 宝记</h1>
+      <p>家庭局域网宝宝成长记录</p>
+      <input id="pwd" type="password" placeholder="请输入访问口令" autocomplete="current-password" />
+      <button class="btn" id="loginBtn">进入</button>
+      <p style="margin-top:12px;font-size:12px;">默认口令 baby1234，请尽快在 .env 中修改</p>
+    </div>
+  </div>
+
+  <!-- 主应用 -->
+  <div id="app">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">⚫ 宝记</div>
+        <div id="nav"></div>
+        <div style="margin-top:auto;">
+          <div class="nav-item" id="logoutBtn"><span class="ico">🚪</span><span>退出登录</span></div>
+        </div>
+      </aside>
+
+      <div class="content">
+        <div class="topbar">
+          <span id="babyTag" class="tag"></span>
+          <span id="dolTag" class="tag"></span>
+          <button id="topSettings" class="top-settings" title="设置">⚙️</button>
+        </div>
+        <div class="main" id="view"></div>
+      </div>
+    </div>
+
+    <!-- 移动端底部导航 -->
+    <nav class="bottom-nav" id="bottomNav"></nav>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="/static/vendor/echarts.min.js"></script>
+  <script src="/static/app.js"></script>
+</body>
+</html>
